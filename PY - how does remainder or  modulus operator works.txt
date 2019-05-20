@@ -1,0 +1,54 @@
+how does remainder or  modulus operator works
+
+
+a % b = a - b * floor(a/b)
+
+
+An expression like x % y evaluates to the remainder of x ÷ y.
+Precedence is the same as operators / (division) and * (multiplication).
+
+>>> 9 / 2
+4
+>>> 9 % 2
+1
+
+
+
+
+% Modulo operator can be also used for printing strings (Just like in C)
+ as defined on Google https://developers.google.com/edu/python/strings.
+
+      # % operator
+  text = "%d little pigs come out
+ or I'll %s and %s and %s" % (3, 'huff', 'puff', 'blow down')
+
+This seems to bit off topic but It will certainly help someone.
+
+
+Somewhat off topic, the % is also used in string formatting operations 
+like %= to substitute values into a string:
+
+>>> x = 'abc_%(key)s_'
+>>> x %= {'key':'value'}
+>>> x 
+'abc_value_'
+Again, off topic, but it seems to be a little documented feature which took 
+me awhile to track down, and I thought it was related to Pythons modulo calculation for which this SO page ranks highly.
+
+
+
+
+Also, there is a useful built-in function called divmod:
+
+divmod(a, b)
+
+Take two (non complex) numbers as arguments and return a pair of numbers 
+
+consisting of their quotient and remainder when using long division.
+
+
+
+
+
+
+

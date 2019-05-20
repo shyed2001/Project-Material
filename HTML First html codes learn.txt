@@ -1,0 +1,211 @@
+First html codes solo learn
+<html>
+   <head>
+      <title>First page of html tutorials</title>
+   </head>
+   <body>
+      This is a line of text. 
+Welcome to HTML! 
+
+HTML stands for HyperText Markup Language. 
+
+Unlike a scripting or programming language that uses scripts to perform functions, a markup language uses tags to identify content. 
+
+Here is an example of an HTML tag:
+<p> I'm a paragraph </p>
+The Web Structure
+<p>
+The ability to code using HTML is essential for any web professional. Acquiring this skill should be the starting point for anyone who is learning how to create content for the web.  
+</p>
+Modern Web Design
+HTML: Structure
+CSS: Presentation
+JavaScript: Behavior
+
+PHP or similar: Backend
+CMS: Content Management
+<p> 
+The <html> Tag 
+
+Although various versions have been released over the years, HTML basics remain the same.  
+<p>
+The structure of an HTML document has been compared with that of a sandwich. As a sandwich has two slices of bread, the HTML document has opening and closing HTML tags. 
+</p>
+<p>
+These tags, like the bread in a sandwich, surround everything else:
+</p>
+<p>
+<html>
+ …...
+</html>
+</p>
+<p>verything in an HTML document is surrounded by the <html> tag.</p>
+<p>
+The <head> Tag</p>
+<p>
+Immediately following the opening HTML tag, you'll find the head of the document, which is identified by opening and closing head tags. 
+</p>
+<p>
+The head of an HTML file contains all of the non-visual elements that help make the page work. </p>
+</p>
+<p>
+<html>
+   <head>…</head>
+</html>
+</p>
+<p>
+</p>
+<p>
+The <body> Tag
+
+The body tag follows the head tag.
+All visual-structural elements are contained within the body tag. 
+
+Headings, paragraphs, lists, quotes, images, and links are just a few of the elements that can be contained within the body tag.
+ </p>
+<p>
+Basic HTML Structure: </p>
+<p><html></p>
+   <p><head></p>
+  <p></head></p>
+  <p><body></p>
+   <p></body></p>
+<p></html></p>
+<p>
+The <body> tag defines the main content of the HTML document.</p>
+<p>
+The HTML File
+</p>
+<p>
+HTML files are text files, so you can use any text editor to create your first webpage. 
+There are some very nice HTML editors available; you can choose the one that works for you. For now let's write our examples in Notepad.
+ </p>
+<p>
+You can run, save, and share your HTML codes on your web browser, without installing any additional software.
+</p>
+
+<p>
+The HTML File.:
+
+Add the basic HTML structure to the text editor with "This is a line of text" in the body section. 
+</p>
+<p>
+<html>
+   <head>
+   </head>
+   <body>
+      This is a line of text. 
+   </body>
+</html></p>
+<p>
+In our example, the file is saved as first.html 
+
+When the file is opened, the result is displayed in the web browser: </p>
+
+<p>
+Don’t forget to save the file. HTML file names should end in either .html or .htm</p>
+<p>
+The <title> Tag
+
+To place a title on the tab describing the web page, add a <title> element to your head section: </p>
+<p>
+<html>
+   <head>
+      <title>first page</title>
+   </head>
+   <body>
+      This is a line of text. 
+   </body>
+</html>
+</p>
+<p>
+
+</p>
+<p>
+The title element is important because it describes the page and is used by search engines.
+<\p>
+<p>
+Creating a Blog
+
+Throughout this course, we'll help you practice and create your own unique blog project, so you'll retain what you've learned and be able to put it to use. Just keep going and follow the instructions in the TASK section. This is what your finished blog page will look like.
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+   </body>
+</html>
