@@ -1,0 +1,374 @@
+
+Lists
+
+Lists are another type of object in Python. They are used to store an indexed list of items. 
+A list is created using square brackets with commas separating items.
+The certain item in the list can be accessed by using its index in square brackets.
+For example:
+words = ["Hello", "world", "!"]
+print(words[0])
+print(words[1])
+print(words[2])
+
+Result:
+>>>
+Hello
+world
+!
+>>>
+
+The first list item's index is 0, rather than 1, as might be expected.
+
+
+
+Lists
+
+An empty list is created with an empty pair of square brackets.
+empty_list = []
+print(empty_list)
+
+Result:
+>>>
+[]
+>>>
+
+Most of the time, a comma won't follow the last item in a list. However,
+ it is perfectly valid to place one there, and it is encouraged in some cases.
+
+Lists
+
+Typically, a list will contain items of a single item type, but it is also 
+possible to include several different types. 
+Lists can also be nested within other lists.
+number = 3
+things = ["string", 0, [1, 2, number], 4.56]
+print(things[1])
+print(things[2])
+print(things[2][2])
+
+Result:
+>>>
+0
+[1, 2, 3]
+3
+>>>
+
+Lists of lists are often used to represent 2D grids, as Python lacks
+ the multidimensional arrays that would be used for this in other languages.
+
+Lists
+
+Indexing out of the bounds of possible list values causes an IndexError. 
+Some types, such as strings, can be indexed like lists. Indexing strings 
+behaves as though you are indexing a list containing each character in the 
+string. 
+For other types, such as integers, indexing them isn't possible, and it causes 
+a TypeError.
+str = "Hello world!"
+print(str[6])
+
+
+Result:
+>>>
+w
+>>>
+
+List Operations
+
+The item at a certain index in a list can be reassigned.
+For example:
+nums = [7, 7, 7, 7, 7]
+nums[2] = 5
+print(nums)
+
+
+Result:
+>>>
+[7, 7, 5, 7, 7]
+>>>
+
+List Operations
+
+Lists can be added and multiplied in the same way as strings.
+For example:
+nums = [1, 2, 3]
+print(nums + [4, 5, 6])
+print(nums * 3)
+
+Result:
+>>>
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
+>>>
+
+Lists and strings are similar in many ways -
+ strings can be thought of as
+ lists of characters that can't be changed.
+3/4
+                               
+List Operations
+
+To check if an item is in a list, the in operator can be used. 
+It returns True if the item occurs one or more times in the list, 
+and False if it doesn't.
+
+words = ["spam", "egg", "spam", "sausage"]
+print("spam" in words)
+print("egg" in words)
+print("tomato" in words)
+Try It Yourself
+
+Result:
+>>>
+True
+True
+False
+>>>
+
+The in operator is also used to determine whether or not a string is a
+ substring of another string.
+
+
+print("wor" in "words")
+
+print("or" in "words")
+
+print("nor" in "words")
+
+Result:
+>>>
+True
+True
+False
+>>>
+
+
+List Operations
+
+To check if an item is not in a list, 
+you can use the not operator in one of the following ways:
+nums = [1, 2, 3]
+
+print(not 4 in nums)
+
+print(4 not in nums)
+
+print(not 3 in nums)
+
+print(3 not in nums)
+
+print("55" not in "5566")
+
+print("55" not in "6666")
+
+print("on" not in "goon")
+
+print("so" not in "goon")
+
+Result:
+>>>
+True
+True
+False
+False
+False
+True
+False
+True
+>>>
+
+List Functions
+
+Another way of altering lists is using 
+the append method. This adds an item to the end of an existing list.
+
+nums = [1, 2, 3]
+
+nums.append(4)
+
+print(nums)
+
+nums.append(5)
+
+print(nums)
+
+nums.append(6,)
+
+print(nums)
+
+
+words = ["hello"]
+
+words.append("world")
+
+print(words)
+
+print(words[1])
+
+Result:
+>>>
+[1, 2, 3, 4]
+[1, 2, 3, 4, 5]
+[1, 2, 3, 4, 5, 6]
+['hello', 'world']
+world
+>>>
+
+The dot before append is there because it is a method of the 
+list class. 
+Methods will be explained in a later lesson.
+
+List Functions
+
+To get the number of items in a list, you can use the len function.
+
+nums = [1, 3, 5, 2, 4]
+print(len(nums))
+
+letters = ["a", "b", "c"]
+
+letters.append("d")
+
+print(len(letters))
+
+Result:
+>>>
+5
+4
+>>>
+
+Unlike append, len is a normal function, rather than a method.
+ This means it is written before the list it is being called on, 
+without a dot.
+
+List Functions
+
+The insert method is similar to append, except that it allows you to 
+insert a new item at any position in the list, as opposed to just at the end.
+
+words = ["Python", "fun"]
+
+
+index = 1
+
+
+words.insert(index, "is")
+
+
+print(words)
+
+
+
+words = ["CPython", "fun"]
+
+
+words.insert(3, "is")
+
+print(words)
+
+
+words.insert(2, "C/C++")
+
+print(words)
+
+words.insert(index, "and")
+
+
+print(words)
+
+
+nums = [9, 8, 7, 6, 5]
+
+nums.append(4)
+
+nums.insert(2, 11)
+
+print(len(nums))
+
+Result:
+>>>
+['Python', 'is', 'fun']
+['CPython', 'fun', 'is']
+['CPython', 'fun', 'C/C++', 'is']
+['CPython', 'and', 'fun', 'C/C++', 'is']
+7
+>>>
+
+List Functions
+
+The index method finds the first occurrence of a list item and returns its index.
+If the item isn't in the list, it raises a ValueError.
+letters = ['p', 'q', 'r', 's', 'p', 'u']
+print(letters.index('r'))
+print(letters.index('p'))
+print(letters.index('z'))
+
+
+Result:
+>>>
+2
+0
+ValueError: 'z' is not in list
+>>> 
+
+There are a few more useful functions and methods for lists. 
+max(list): Returns the list item with the maximum value
+min(list): Returns the list item with minimum value
+list.count(obj): Returns a count of how many times an item occurs in a list
+list.remove(obj): Removes an object from a list
+list.reverse(): Reverses objects in a list
+
+
+letters = ['p', 'q', 'r', 's', 'p', 'u', 9, "9", 0, .0, 7.0, 7, "7"]
+
+print(letters.index('r'))
+
+print(letters.index('p'))
+
+print(letters.index('9'))
+
+print(letters)
+
+print(letters.count(7))
+
+print(letters.remove(0))
+
+print(letters)
+print(letters.reverse())
+
+print(letters)
+
+
+
+
+nums=[1,2,0,.0,7,7.0,4/2]
+
+print(nums)
+
+print(max(nums))
+
+print(nums)
+
+print(min(nums))
+
+Result:
+>>>
+
+2
+0
+7
+['p', 'q', 'r', 's', 'p', 'u', 9, '9', 0, 0.0, 7.0, 7, '7']
+2
+None
+['p', 'q', 'r', 's', 'p', 'u', 9, '9', 0.0, 7.0, 7, '7']
+None
+['7', 7, 7.0, 0.0, '9', 9, 'u', 'p', 's', 'r', 'q', 'p']
+[1, 2, 0, 0.0, 7, 7.0, 2.0]
+7
+[1, 2, 0, 0.0, 7, 7.0, 2.0]
+0
+
+>>>
+
+
+
