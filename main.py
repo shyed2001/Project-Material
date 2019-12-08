@@ -49,10 +49,10 @@ characterSpacing = 5
 fontColor = "#FF00FF"
 
 
-
+time.sleep(1)
 displayMessage(message,fontSize,fontColor,-190,0)
-time.sleep(3)
+time.sleep(7)
 window.clear()
-time.sleep(3)
-window.mainloop()
-##window.exitonclick()
+time.sleep(1)
+##window.mainloop()
+window.exitonclick()
