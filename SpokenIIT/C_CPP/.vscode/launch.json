@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "d:\\GitHub\\Project-Material\\SpokenIIT\\C_CPP",
+      "environment": [],
+      "program": "d:\\GitHub\\Project-Material\\SpokenIIT\\C_CPP\\build\\Debug\\outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\msys2_64\\msys64\\mingw64\\bin\\gdb.exe",
+      "externalConsole": false
+    }
+  ]
+}
